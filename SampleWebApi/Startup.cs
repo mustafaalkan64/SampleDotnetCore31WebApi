@@ -13,12 +13,12 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
-using PenaltyCalculationApp.Uow;
 using SampleWebApi.Business.Abstract;
 using SampleWebApi.Business.Services;
 using SampleWebApi.EfCoreDbContext;
 using SampleWebApi.Entities;
 using SampleWebApi.Models.Dtos;
+using SampleWebApi.Uow;
 
 namespace SampleWebApi
 {

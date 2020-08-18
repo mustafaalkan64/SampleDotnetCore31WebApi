@@ -1,5 +1,5 @@
 ﻿
-using PenaltyCalculationApp.Repository;
+using SampleWebApi.Repository;
 using SampleWebApi.EfCoreDbContext;
 using SampleWebApi.Entities;
 using System;
@@ -7,7 +7,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace PenaltyCalculationApp.Uow
+namespace SampleWebApi.Uow
 {
     public class UnitOfWork : IUnitOfWork, IDisposable
     {
@@ -20,10 +20,6 @@ namespace PenaltyCalculationApp.Uow
         {
             _context = context;
         }
-
-        // I generate my all repositories according to Singleton Pattern 
-        // depending on UnitOfWork class
-        // as you see below
         public IGenericRepository<Product> ProductRepository
         {
             get { return _productRepository ?? (_productRepository = new GenericRepository<Product>(_context)); }

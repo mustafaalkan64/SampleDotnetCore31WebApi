@@ -4,7 +4,7 @@ using System.Linq;
 using System.Linq.Expressions;
 using System.Threading.Tasks;
 
-namespace PenaltyCalculationApp.Repository
+namespace SampleWebApi.Repository
 {
     public interface IGenericRepository<T>
     {

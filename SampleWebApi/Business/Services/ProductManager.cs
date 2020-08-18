@@ -1,10 +1,10 @@
 ﻿using AutoMapper;
 using Microsoft.Extensions.Logging;
-using PenaltyCalculationApp.Uow;
 using SampleWebApi.Business.Abstract;
 using SampleWebApi.Entities;
 using SampleWebApi.Models;
 using SampleWebApi.Models.Dtos;
+using SampleWebApi.Uow;
 using System;
 using System.Collections.Generic;
 using System.Linq;
