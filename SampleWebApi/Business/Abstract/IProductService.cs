@@ -14,6 +14,6 @@ namespace SampleWebApi.Business.Abstract
         Task<WebApiResponse> UpdateAsync(int? productId, ProductDto entity);
         Task<WebApiResponse> DeleteAsync(int? productId);
         Task<IEnumerable<Product>> GetAsync();
-        Task<Product> GetByIdAsync(int? todoId);
+        Task<Product> GetByIdAsync(int? productId);
     }
 }
