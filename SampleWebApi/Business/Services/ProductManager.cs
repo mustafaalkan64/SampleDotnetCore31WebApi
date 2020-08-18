@@ -89,14 +89,14 @@ namespace SampleWebApi.Business.Services
             }
         }
 
-        public async Task<WebApiResponse> DeleteAsync(int? todoId)
+        public async Task<WebApiResponse> DeleteAsync(int? productId)
         {
             try
             {
-                var todo = await _uow.ProductRepository.FindByAsync(a => a.Id == todoId);
-                if (todo != null)
+                var product = await _uow.ProductRepository.FindByAsync(a => a.Id == productId);
+                if (product != null)
                 {
-                    await _uow.ProductRepository.DeleteAsync(todo);
+                    await _uow.ProductRepository.DeleteAsync(product);
                     await _uow.Commit();
                     return new WebApiResponse()
                     {
@@ -115,7 +115,7 @@ namespace SampleWebApi.Business.Services
             }
             catch (Exception e)
             {
-                _logger.LogError(e, "Exception Error During Delete Todo", todoId);
+                _logger.LogError(e, "Exception Error During Delete Product", productId);
                 throw e;
             }
         }
