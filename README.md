@@ -1,1 +1,1 @@
-# SampleDotnetCore31WebApi
+# Sample DotnetCore 3.1 Web Api Application
