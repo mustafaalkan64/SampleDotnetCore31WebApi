@@ -10,7 +10,7 @@ using SampleWebApi.Models.Dtos;
 
 namespace SampleWebApi.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/product")]
     [ApiController]
     public class ProductApiController : ControllerBase
     {

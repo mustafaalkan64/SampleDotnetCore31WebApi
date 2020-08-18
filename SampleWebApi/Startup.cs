@@ -44,8 +44,8 @@ namespace SampleWebApi
             // AutoMapper Configurations
             var config = new MapperConfiguration(cfg =>
             {
-                cfg.CreateMap<ProductDto, Product>();
-                    //.ForMember(x => x.Id, opt => opt.Ignore());
+                cfg.CreateMap<ProductDto, Product>()
+                    .ForMember(x => x.Id, opt => opt.Ignore());
                 cfg.CreateMap<Product, ProductDto>();
             });
 
@@ -54,7 +54,7 @@ namespace SampleWebApi
 
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "Todo Api", Version = "v1" });
+                c.SwaggerDoc("v1", new OpenApiInfo { Title = "Sample Web Api", Version = "v1" });
                 c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
                 {
                     Name = "Authorization",
@@ -94,7 +94,7 @@ namespace SampleWebApi
             app.UseSwagger();
             app.UseSwaggerUI(c =>
             {
-                c.SwaggerEndpoint("/swagger/v1/swagger.json", "Todo Api");
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "Sample Web Api");
             });
 
             app.UseHttpsRedirection();
