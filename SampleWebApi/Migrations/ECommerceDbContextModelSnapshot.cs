@@ -8,7 +8,7 @@ using SampleWebApi.EfCoreDbContext;
 
 namespace SampleWebApi.Migrations
 {
-    [DbContext(typeof(ECommerceDbContext))]
+    [DbContext(typeof(SampleDbContext))]
     partial class ECommerceDbContextModelSnapshot : ModelSnapshot
     {
         protected override void BuildModel(ModelBuilder modelBuilder)

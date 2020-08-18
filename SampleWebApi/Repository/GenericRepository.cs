@@ -10,10 +10,10 @@ namespace PenaltyCalculationApp.Repository
 {
     public class GenericRepository<T> : IGenericRepository<T> where T : class
     {
-        private ECommerceDbContext context;
+        private SampleDbContext context;
         private DbSet<T> dbSet;
 
-        public GenericRepository(ECommerceDbContext context)
+        public GenericRepository(SampleDbContext context)
         {
             this.context = context;
             this.dbSet = context.Set<T>();

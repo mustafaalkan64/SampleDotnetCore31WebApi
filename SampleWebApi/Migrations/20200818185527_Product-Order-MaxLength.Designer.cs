@@ -9,7 +9,7 @@ using SampleWebApi.EfCoreDbContext;
 
 namespace SampleWebApi.Migrations
 {
-    [DbContext(typeof(ECommerceDbContext))]
+    [DbContext(typeof(SampleDbContext))]
     [Migration("20200818185527_Product-Order-MaxLength")]
     partial class ProductOrderMaxLength
     {

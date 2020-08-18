@@ -11,12 +11,12 @@ namespace PenaltyCalculationApp.Uow
 {
     public class UnitOfWork : IUnitOfWork, IDisposable
     {
-        private readonly ECommerceDbContext _context;
+        private readonly SampleDbContext _context;
         private IGenericRepository<Product> _productRepository;
         private IGenericRepository<OrderItems> _orderItemsRepository;
         private IGenericRepository<Order> _orderRepository;
 
-        public UnitOfWork(ECommerceDbContext context)
+        public UnitOfWork(SampleDbContext context)
         {
             _context = context;
         }

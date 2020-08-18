@@ -7,11 +7,11 @@ using System.Threading.Tasks;
 
 namespace SampleWebApi.EfCoreDbContext
 {
-    public class ECommerceDbContext : DbContext
+    public class SampleDbContext : DbContext
     {
-        public ECommerceDbContext(DbContextOptions options) : base(options)
-        {
-        }
+        public SampleDbContext(DbContextOptions options) 
+            : base(options)
+        { }
 
         public DbSet<Order> Orders { get; set; }
         public DbSet<OrderItems> OrderItems { get; set; }
