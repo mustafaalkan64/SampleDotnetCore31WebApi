@@ -2,6 +2,6 @@
 
 Medium Link:
 
-Part I    https://rb.gy/ec91py
+Part I  :   https://rb.gy/ec91py
 
-Part II   https://rb.gy/oqb7iy
+Part II :  https://rb.gy/oqb7iy
